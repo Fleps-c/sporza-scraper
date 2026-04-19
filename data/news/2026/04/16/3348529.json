@@ -1,0 +1,54 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [],
+  "category": "WTA-Stuttgart (Dui)",
+  "images": [
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/pol.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/ukr.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/blr.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/kaz.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/usa.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/ita.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/xxx.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/can.svg.png"
+    }
+  ],
+  "lead": null,
+  "published_at": "2026-04-16T12:26:16+02:00",
+  "related_links": [
+    "https://sporza.be/nl/sport/tennis/~3348529/",
+    "https://sporza.be/nl/sport/tennis/~3348462/",
+    "https://sporza.be/nl/sport/tennis/~3348476/",
+    "https://sporza.be/nl/sport/tennis/~3348513/"
+  ],
+  "slug": "3348529",
+  "tags": [],
+  "title": "2026-04-17 02:00",
+  "updated_at": "2026-04-16T12:26:16+02:00",
+  "url": "https://sporza.be/nl/sport/tennis/~3348529/"
+}

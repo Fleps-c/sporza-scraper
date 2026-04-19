@@ -1,0 +1,85 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [
+    "Met Ã©Ã©n baltoets kan Hans Vanaken een hele verdediging verschalken. Dat liet de Gouden Schoen van Club Brugge vorig weekend zien op het veld van STVV. In Extra Time vergelijken ze de steekpass van Vanaken met een van grootmeester Kevin De Bruyne."
+  ],
+  "category": "Jupiler Pro League",
+  "images": [
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width1280/2025/02/18/1c3ada2c-4fca-4cfb-9ad4-5ce4f7cc5faa.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/48.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/92.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/41.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/43.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/1021.png?updated=202506"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://images.vrt.be/width960/2025/02/18/1c3ada2c-4fca-4cfb-9ad4-5ce4f7cc5faa.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/14/798c5ab2-ef65-4f88-b575-369efa4b801e.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/16/49bc5ffb-9852-42b4-b208-741c6e0f99f4.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/17/2b341b51-74a0-4484-a644-05429cece4c6.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/19/882e3b2d-4954-4a44-8d72-7b842451e002.jpg"
+    }
+  ],
+  "lead": "Met Ã©Ã©n baltoets kan Hans Vanaken een hele verdediging verschalken. Dat liet de Gouden Schoen van Club Brugge vorig weekend zien op het veld van STVV. In Extra Time vergelijken ze de steekpass van Vanaken met een van grootmeester Kevin De Bruyne.",
+  "pl_enrichment": {
+    "article_type": "general coverage",
+    "performance_signals": [
+      {
+        "confidence": 0.95,
+        "evidence": "In Extra Time vergelijken ze de steekpass van Vanaken met een van grootmeester Kevin De Bruyne.",
+        "player": "De Bruyne",
+        "score": 0.6,
+        "signal_type": "assist_threat"
+      }
+    ],
+    "players_mentioned": [
+      {
+        "context": "tra Time vergelijken ze de steekpass van Vanaken met een van grootmeester Kevin De Bruyne.",
+        "mention_count": 1,
+        "name": "De Bruyne"
+      }
+    ],
+    "unique_players": [
+      "De Bruyne"
+    ]
+  },
+  "published_at": "2025-02-18T12:14:54+01:00",
+  "related_links": [],
+  "slug": "video-hans-vanaken-met-een-steekpass-zoals-kevin-de-bruyne-fenomenaal-1739877087513",
+  "tags": [],
+  "title": "VIDEO - Hans Vanaken met een steekpass zoals Kevin De Bruyne: \"Fenomenaal!\"",
+  "updated_at": "2025-02-18T12:21:41+01:00",
+  "url": "https://sporza.be/nl/2025/02/18/video-hans-vanaken-met-een-steekpass-zoals-kevin-de-bruyne-fenomenaal~1739877087513/"
+}
