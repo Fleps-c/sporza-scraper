@@ -8,6 +8,7 @@ import re
 import sqlite3
 from dataclasses import asdict, is_dataclass
 from datetime import datetime, timezone
+from .player_extractor import PLAYER_TO_CLUB
 from pathlib import Path
 from typing import Any
 
@@ -65,6 +66,7 @@ class Storage:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 article_slug TEXT,
                 player_name TEXT,
+                club TEXT
                 signal_type TEXT,
                 score REAL,
                 FOREIGN KEY (article_slug) REFERENCES articles (slug)
@@ -144,12 +146,16 @@ class Storage:
             # Voeg alle nieuwe signalen toe
             signals = enrichment.get("performance_signals", [])
             for signal in signals:
+                player_name = signal.get("player_name") # of signal.get("player") afhankelijk van je dict
+                club = PLAYER_TO_CLUB.get(player_name, "Unknown")
+                
                 cursor.execute('''
-                    INSERT INTO signals (article_slug, player_name, signal_type, score)
-                    VALUES (?, ?, ?, ?)
+                    INSERT INTO signals (article_slug, player_name, club, signal_type, score)
+                    VALUES (?, ?, ?, ?, ?)
                 ''', (
                     slug,
-                    signal.get("player_name"), # Aanname dat deze velden zo heten in jullie dict
+                    player_name,
+                    club,
                     signal.get("signal_type"),
                     signal.get("score")
                 ))
