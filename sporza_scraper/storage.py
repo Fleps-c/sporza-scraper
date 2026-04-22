@@ -5,6 +5,7 @@ import json
 import logging
 import os
 import re
+import sqlite3
 from dataclasses import asdict, is_dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -32,6 +33,46 @@ class Storage:
     def __init__(self, root: Path = DEFAULT_OUTPUT_ROOT, dry_run: bool = False) -> None:
         self.root = Path(root)
         self.dry_run = dry_run
+        
+        # --- NIEUW: SQLite Database Setup ---
+        self.db_path = self.root / "sporza_predictions.db"
+        
+        # Zorg dat de data folder bestaat
+        self.root.mkdir(parents=True, exist_ok=True)
+        
+        if not self.dry_run:
+            self._init_db()
+            
+    def _init_db(self) -> None:
+        """Maak de database tabellen aan als ze nog niet bestaan."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        # Tabel voor artikelen
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS articles (
+                slug TEXT PRIMARY KEY,
+                title TEXT,
+                published_at TEXT,
+                url TEXT,
+                article_type TEXT
+            )
+        ''')
+        
+        # Tabel voor de gedetecteerde signalen per speler
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS signals (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                article_slug TEXT,
+                player_name TEXT,
+                signal_type TEXT,
+                score REAL,
+                FOREIGN KEY (article_slug) REFERENCES articles (slug)
+            )
+        ''')
+        
+        conn.commit()
+        conn.close()
 
     # ------------------------------------------------------------------
     # Public writers
@@ -69,8 +110,57 @@ class Storage:
         path = folder / f"{slug}.json"
         payload = article.to_dict()
         payload["pl_enrichment"] = enrichment
+        
+        # 1. Bestaande JSON opslag behouden (optioneel, maar veilig voor nu)
         self._write_json(path, payload)
+        
+        # 2. NIEUW: Sla op in SQLite Database
+        if not self.dry_run:
+            self._save_pl_to_db(article, enrichment, slug)
+            
         return path
+
+    def _save_pl_to_db(self, article: NewsArticle, enrichment: dict, slug: str) -> None:
+        """Sla het artikel en de signalen op in de database."""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        try:
+            # Voeg het artikel toe. 'OR REPLACE' update het artikel als we het opnieuw scrapen
+            cursor.execute('''
+                INSERT OR REPLACE INTO articles (slug, title, published_at, url, article_type)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (
+                slug, 
+                article.title, 
+                article.published_at, 
+                article.url, 
+                enrichment.get("article_type", "unknown")
+            ))
+            
+            # Verwijder oude signalen voor dit artikel (zodat we geen dubbele data krijgen bij een re-scrape)
+            cursor.execute('DELETE FROM signals WHERE article_slug = ?', (slug,))
+            
+            # Voeg alle nieuwe signalen toe
+            signals = enrichment.get("performance_signals", [])
+            for signal in signals:
+                cursor.execute('''
+                    INSERT INTO signals (article_slug, player_name, signal_type, score)
+                    VALUES (?, ?, ?, ?)
+                ''', (
+                    slug,
+                    signal.get("player_name"), # Aanname dat deze velden zo heten in jullie dict
+                    signal.get("signal_type"),
+                    signal.get("score")
+                ))
+                
+            conn.commit()
+            log.info("Saved article '%s' and %d signals to database.", slug, len(signals))
+            
+        except sqlite3.Error as e:
+            log.error("Database error for article %s: %s", slug, e)
+        finally:
+            conn.close()
 
     def save_stats_csv(self, season: str, data: bytes) -> Path:
         """Save downloaded CSV to data/stats/E0_{season}.csv."""
