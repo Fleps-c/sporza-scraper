@@ -1,0 +1,279 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [
+    "Aston Villa staat weer een stap dichter bij een eerste Europese beker sinds de eindwinst van de Beker voor Landskampioenen in 1982. Bologna was grotendeels baas in eigen stadion, maar vlak voor en na de rust ging het licht even uit en dat betaalden ze twee keer cash.",
+    "Aston Villa heeft nog altijd twee paarden in de race die aan de finishlijn een ticket voor de Champions League moet opleveren. In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richting het voetbalwalhalla brengen.",
+    "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+    "Het was een hoekschop van Tielemans die Villa op 0-1 zette. Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+    "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker. De Italianen hadden tot dan gedomineerd en ook de beste kansen gekregen, maar steeds lag Emiliano Martinez in de weg.",
+    "De late 1-2 van uitblinker Jonathan Rowe gaf de Bolognesi weer wat moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde. Zo lijkt de opdracht voor Villa na 90 minuten al volbracht."
+  ],
+  "category": "Europa League",
+  "images": [
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width1280/2026/04/09/9c221c57-247f-4b99-8717-77be0349ba06.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/48.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/92.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/41.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/43.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/1021.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4471.png?updated=1768914005000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4010.png?updated=1768914004000"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://images.vrt.be/width960/2026/04/09/672679aa-63f1-4439-ab18-2441b6a647b6.jpg"
+    },
+    {
+      "alt": "Ollie Watkins viert een van zijn twee doelpunten",
+      "url": "https://images.vrt.be/width960/2026/04/09/9c221c57-247f-4b99-8717-77be0349ba06.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4026.png?updated=1758189604000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4102.png?updated=1751346004000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4053.png?updated=1768914004000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4496.png?updated=1775124003000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4048.png?updated=1772622004000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4088.png?updated=1771236004000"
+    }
+  ],
+  "lead": "Aston Villa staat weer een stap dichter bij een eerste Europese beker sinds de eindwinst van de Beker voor Landskampioenen in 1982. Bologna was grotendeels baas in eigen stadion, maar vlak voor en na de rust ging het licht even uit en dat betaalden ze twee keer cash.",
+  "pl_enrichment": {
+    "article_type": "general coverage",
+    "performance_signals": [
+      {
+        "confidence": 0.65,
+        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
+        "player": "Onana",
+        "score": 0.45,
+        "signal_type": "team_momentum_positive"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Onana",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Onana",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Konsa",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Konsa",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
+        "player": "Konsa",
+        "score": -0.6,
+        "signal_type": "injury_doubt"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
+        "player": "Tielemans",
+        "score": 0.45,
+        "signal_type": "team_momentum_positive"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Tielemans",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Tielemans",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
+        "player": "Tielemans",
+        "score": -0.6,
+        "signal_type": "injury_doubt"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Watkins",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
+        "player": "Watkins",
+        "score": -0.6,
+        "signal_type": "injury_doubt"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "De late 1-2 van uitblinker Jonathan Rowe gaf de Bolognesi weer wat moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde.",
+        "player": "Watkins",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "De late 1-2 van uitblinker Jonathan Rowe gaf de Bolognesi weer wat moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde.",
+        "player": "Watkins",
+        "score": 0.8,
+        "signal_type": "goal_threat"
+      }
+    ],
+    "players_mentioned": [
+      {
+        "context": "brengen.\nUnai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.\nHet was een hoekschop van Tielemans die V",
+        "mention_count": 1,
+        "name": "Onana"
+      },
+      {
+        "context": "et middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette. Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn ko",
+        "mention_count": 1,
+        "name": "Konsa"
+      },
+      {
+        "context": "Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette.",
+        "mention_count": 1,
+        "name": "Tielemans"
+      },
+      {
+        "context": "©t Amadou Onana en Youri Tielemans op het middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette. Ezri Konsa had eerder in de eerste helft geluk dat zijn",
+        "mention_count": 1,
+        "name": "Tielemans"
+      },
+      {
+        "context": "keurd, op zijn kopbalgoal viel niets af te dingen.\nKort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker. De Italianen hadden tot dan gedomi",
+        "mention_count": 1,
+        "name": "Watkins"
+      },
+      {
+        "context": "at moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde. Zo lijkt de opdracht voor Villa na 90 minuten al vol",
+        "mention_count": 1,
+        "name": "Watkins"
+      }
+    ],
+    "unique_players": [
+      "Onana",
+      "Konsa",
+      "Tielemans",
+      "Watkins"
+    ]
+  },
+  "published_at": "2026-04-09T22:55:34+02:00",
+  "related_links": [
+    "https://sporza.be/nl/sport/voetbal/~3334071/",
+    "https://sporza.be/nl/sport/voetbal/~3334176/",
+    "https://sporza.be/nl/sport/voetbal/~3334081/",
+    "https://sporza.be/nl/sport/voetbal/~3334178/",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1534943",
+    "https://sporza.be/nl/tag/voetbal/spelers/~951740",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1998034",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1527132",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1790311",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1461874",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1489481",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1699431",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1653439",
+    "https://sporza.be/nl/tag/voetbal/spelers/~874820",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1718918",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1080366",
+    "https://sporza.be/nl/tag/voetbal/spelers/~850898",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1791168",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2014569",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1195075",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1121270",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1335762",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2220609",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1951974",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2268017",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1298919",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1448545",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1970542",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1385791",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1426497",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1969537",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2166980",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1480174",
+    "https://sporza.be/nl/tag/voetbal/spelers/~870547",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2355301",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2326574",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2390589",
+    "https://sporza.be/nl/tag/voetbal/spelers/~918242",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1563375",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1918629",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2015820",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1128670",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2392661",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2319484",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1791454",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1498041",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1656930",
+    "https://sporza.be/nl/tag/voetbal/spelers/~40085",
+    "https://sporza.be/nl/tag/voetbal/spelers/~343886"
+  ],
+  "slug": "bologna-aston-villa-tielemans-en-onana-snuffelen-met-aston-villa-nu-al-aan-halve-finales-na-winst-in-bologna-1750777808762",
+  "tags": [],
+  "title": "Tielemans en Onana snuffelen met Aston Villa nu al aan halve finales na winst in Bologna",
+  "updated_at": "2026-04-09T23:25:21+02:00",
+  "url": "https://sporza.be/nl/matches/voetbal/eur/uefa-europa-league/2025-2026/kwartfinale/01/bologna-aston-villa-tielemans-en-onana-snuffelen-met-aston-villa-nu-al-aan-halve-finales-na-winst-in-bologna~1750777808762/"
+}

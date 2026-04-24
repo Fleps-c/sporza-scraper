@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "sporza-scraper"
+version = "1.0.0"
+description = "Polite webscraper for sporza.be with Premier League performance predictions"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "tenacity>=8.0",
+    "spacy>=3.7,<4.0",
+]
+
+[project.optional-dependencies]
+dashboard = ["streamlit", "pandas"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+sporza-scraper = "sporza_scraper.__main__:main"

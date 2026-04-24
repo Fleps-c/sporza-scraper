@@ -1,0 +1,94 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [
+    "Een primeur in de voetbalwereld. Waar er in BelgiÃ« en eigenlijk overal ter wereld voor buitenspel gefloten zou worden, is in Canada een doelpunt goedgekeurd terwijl de doelpuntenmaker duidelijk in buitenspelpositie stond. Dat het doelpunt toch telde, is het gevolg van een idee van ex-Arsenalcoach ArsÃ ̈ne Wenger.",
+    "Een moment dat nog veel over de tongen zal gaan. In Canada wordt sinds dit seizoen een nieuwe buitenspelregel getest. Zo staat een aanvaller pas buitenspel als er \"daglicht\" te zien is tussen hem en de laatste verdediger. Dat idee kwam uit de koker van ArsÃ ̈ne Wenger, de ex-Arsenaltrainer die nu aan de slag is bij de FIFA. En die nieuwe regel is in de wedstrijd tussen Halifax Wanderers en Pacific FC nu ook naar de praktijk omgezet. Bij de openingsgoal stond Alejandro Diaz duidelijk buitenspel, alleen stond hij niet volledig voorbij de laatste man. Geen \"daglicht\" verschil, dus, en wel een geldig doelpunt. Al snapten de spelers van Halifax Wanderers niet meteen wat er gebeurde, want ze gebaarden dat het duidelijk buitenspel was. Met dit voorbeeld kan het debat rond buitenspel verder gevoerd worden. Want wat duidelijk is, is dat het laatste woord hierover nog niet gezegd is. Als het pilootproject een positief rapport krijgt, zou het kunnen dat de nieuwe regel binnen enkele jaren ook in BelgiÃ« ingevoerd zal worden."
+  ],
+  "category": "Buitenlands voetbal",
+  "images": [
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width1280/2026/04/19/1de50b7a-09ed-4bc7-89a2-26db600f5c1c.jpg"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://images.vrt.be/width960/2026/04/19/1de50b7a-09ed-4bc7-89a2-26db600f5c1c.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/03/31/babb8a44-e1c3-4426-9a52-8d8b2675db88.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/14/ddd15272-2746-4b03-8fc4-9eac30069bbe.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/16/8cc6a53d-146f-4996-92a4-440727747c2b.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/16/43a1a7e9-949d-4aa6-871a-80e312f48321.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/2026/04/17/4c0140ad-6930-4f87-ba50-85bd8ac2d749.jpg"
+    }
+  ],
+  "lead": "Een primeur in de voetbalwereld. Waar er in BelgiÃ« en eigenlijk overal ter wereld voor buitenspel gefloten zou worden, is in Canada een doelpunt goedgekeurd terwijl de doelpuntenmaker duidelijk in buitenspelpositie stond. Dat het doelpunt toch telde, is het gevolg van een idee van ex-Arsenalcoach ArsÃ ̈ne Wenger.",
+  "pl_enrichment": {
+    "article_type": "general coverage",
+    "performance_signals": [
+      {
+        "confidence": 0.95,
+        "evidence": "Bij de openingsgoal stond Alejandro Diaz duidelijk buitenspel, alleen stond hij niet volledig voorbij de laatste man.",
+        "player": "Diaz",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Geen \"daglicht\" verschil, dus, en wel een geldig doelpunt.",
+        "player": "Diaz",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      }
+    ],
+    "players_mentioned": [
+      {
+        "context": "Pacific FC nu ook naar de praktijk omgezet. Bij de openingsgoal stond Alejandro Diaz duidelijk buitenspel, alleen stond hij niet volledig voorbij de laatste man. Ge",
+        "mention_count": 1,
+        "name": "Diaz"
+      }
+    ],
+    "unique_players": [
+      "Diaz"
+    ]
+  },
+  "published_at": "2026-04-19T12:33:09+02:00",
+  "related_links": [
+    "https://sporza.be/nl/2026/04/19/zelfs-na-cruciale-zege-blijft-titel-verboden-thema-bij-union-dat-dolt-over-grote-zegehonger-ze-krijgen-hier-geen-eten~1776627109155/",
+    "https://sporza.be/nl/2026/04/19/het-verhaal-achter-de-kaketoe-van-kompany-die-bewust-overal-opdook-tijdens-titelfeest-en-waar-bayern-ook-wat-aan-wil-verdienen~1776627869223/",
+    "https://sporza.be/nl/2026/04/19/hoe-erg-miste-club-brugge-hans-vanaken-veel-spelers-zijn-met-die-blessure-3-weken-out-hij-forceert-zich-om-toch-nog-in-te-vallen~1776614454140/",
+    "https://sporza.be/nl/matches/basketbal/2026-04/euroleague-titel-met-flink-belgisch-tintje-mvp-allemand-en-magistrale-meesseman-dirigeren-fenerbahce-naar-winst~1776609545003/",
+    "https://sporza.be/nl/2026/04/19/-nog-geen-bierdouche-voor-kompany-na-titel-want-treble-is-doel-ik-wil-er-nog-meer-van-genieten~1776625560153/",
+    "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2025-2026/kampioenschap-play-offs/03/union-club-brugge-union-deelt-club-brugge-dreun-uit-in-titelstrijd-late-treffer-zeneli-vergroot-kloof-naar-4-punten~1774287301254/",
+    "https://sporza.be/nl/2026/04/19/-we-moeten-niet-liegen-dit-is-meer-dan-gewoon-3-punten-club-brugge-likt-wonden-na-pijnlijke-nederlaag-tegen-union~1776625754063/",
+    "https://sporza.be/nl/matches/voetbal/jupiler-pro-league/2025-2026/degradatie-play-offs/03/raal-la-louviere-zulte-waregem-zulte-waregem-wint-veredelde-oefenmatch-op-la-louviere-ake-en-ementa-maken-de-goals~1774288443440/",
+    "https://sporza.be/nl/2026/04/19/bekijk-de-goals-uit-la-louviere-zulte-waregem-0-2~1776629883371/",
+    "https://sporza.be/nl/2026/04/19/bekijk-sportweekend-van-19-april~1776622173119/",
+    "https://sporza.be/nl/2026/04/19/sportweekend-trok-naar-lani-spiessens-europese-kampioene-tumbli~1776621569444/",
+    "https://sporza.be/nl/2026/04/19/nieuwe-tik-voor-arsenal-na-nederlaag-tegen-manchester-city~1776621258222/",
+    "https://sporza.be/nl/2026/04/19/lucas-coenen-moet-in-italie-het-grootste-deel-van-zijn-voorspron~1776620762076/",
+    "https://sporza.be/nl/2026/04/19/bayern-kampioen-kompany-en-co-vieren-met-de-fans~1776621028757/",
+    "https://sporza.be/nl/2026/04/19/amstel-gold-race-bij-de-vrouwen-krijgt-met-paula-blasi-zeer-verr~1776620651386/",
+    "https://sporza.be/nl/2026/04/19/waar-ligt-het-plafond-van-remco-evenepoel~1776620610837/"
+  ],
+  "slug": "duidelijk-buitenspel-toch-een-geldig-doelpunt-nieuwe-daglicht-offsideregel-voor-het-eerst-toegepast-in-canada-1776593506294",
+  "tags": [],
+  "title": "Duidelijk buitenspel, toch een geldig doelpunt: nieuwe \"daglicht\"-offsideregel voor het eerst toegepast in Canada",
+  "updated_at": "2026-04-19T12:33:09+02:00",
+  "url": "https://sporza.be/nl/2026/04/19/duidelijk-buitenspel-toch-een-geldig-doelpunt-nieuwe-daglicht-offsideregel-voor-het-eerst-toegepast-in-canada~1776593506294/"
+}

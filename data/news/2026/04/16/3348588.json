@@ -1,0 +1,66 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [],
+  "category": "ATP-Barcelona (Spa)",
+  "images": [
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/gbr.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/esp.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/cze.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/srb.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/prt.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/ita.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/deu.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/can.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/usa.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/aus.svg.png"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://api.sporza.be/data/images/flags/xxx.svg.png"
+    }
+  ],
+  "lead": null,
+  "published_at": "2026-04-16T14:12:24+02:00",
+  "related_links": [
+    "https://sporza.be/nl/sport/tennis/~3348461/",
+    "https://sporza.be/nl/sport/tennis/~3348441/",
+    "https://sporza.be/nl/sport/tennis/~3348588/",
+    "https://sporza.be/nl/sport/tennis/~3348560/"
+  ],
+  "slug": "3348588",
+  "tags": [],
+  "title": "Cameron Norrie-Rafael JÃ3dar",
+  "updated_at": "2026-04-16T14:12:24+02:00",
+  "url": "https://sporza.be/nl/sport/tennis/~3348588/"
+}
