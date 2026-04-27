@@ -1,0 +1,33 @@
+# Use Python 3.11 slim image as the base
+FROM python:3.11-slim
+
+# Set environment variables to prevent Python from writing .pyc files 
+# and to ensure stdout is logged immediately
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Set the working directory
+WORKDIR /app
+
+# Copy dependency files first to leverage Docker cache
+COPY requirements.txt pyproject.toml ./
+
+# Install Python dependencies
+# (lxml and pandas usually have pre-compiled wheels for standard slim images)
+RUN pip install --upgrade pip && \
+    pip install --no-cache-dir -r requirements.txt
+
+# Pre-download the Dutch spaCy language model so it's baked into the image
+RUN python -m spacy download nl_core_news_md
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose port 8501 for the Streamlit dashboard
+EXPOSE 8501
+
+# Declare a volume for the data directory so scraped data and the SQLite DB persist
+VOLUME ["/app/data"]
+
+# By default, show the CLI help. Users can override this to run specific commands.
+CMD ["python", "-m", "sporza_scraper", "--help"]
