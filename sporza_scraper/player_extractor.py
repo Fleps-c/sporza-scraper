@@ -7,12 +7,20 @@ optionally filtered against a set of known Premier League players/teams.
 from __future__ import annotations
 
 import logging
+import re
 import subprocess
 import sys
 from dataclasses import dataclass, field
+from functools import lru_cache
 from typing import Sequence
 
 log = logging.getLogger(__name__)
+
+
+@lru_cache(maxsize=256)
+def _get_player_pattern(name: str) -> re.Pattern[str]:
+    """Return a compiled word-boundary regex for a player name (cached)."""
+    return re.compile(r'\b' + re.escape(name) + r'\b', re.IGNORECASE)
 
 _NLP = None  # lazy-loaded spaCy pipeline
 
@@ -228,13 +236,12 @@ def extract_player_mentions(
 
     # --- Strategy 2: Dictionary-based matching ---
     # Catches player names spaCy's Dutch model misses.
-    import re as _re
     already_found = {n.lower() for n in seen_names}
     for player_name in PREMIER_LEAGUE_PLAYERS:
         if player_name.lower() in already_found:
             continue
-        # Use word-boundary matching to avoid partial matches.
-        pattern = _re.compile(r'\b' + _re.escape(player_name) + r'\b', _re.IGNORECASE)
+        # Use pre-compiled patterns from cache (avoids recompiling per call).
+        pattern = _get_player_pattern(player_name)
         for match in pattern.finditer(full_text):
             # Extract a context snippet around the match.
             start = max(0, match.start() - 80)

@@ -47,6 +47,7 @@ class PerformanceSignal:
 # Each keyword list is checked case-insensitively against the sentence.
 # ---------------------------------------------------------------------------
 
+# Pre-lowered at import time so detect_signals never calls .lower() on keywords.
 _SIGNAL_DEFS: dict[SignalType, tuple[list[str], float]] = {
     "positive_form": (
         [
@@ -160,6 +161,9 @@ _NEGATION_WORDS = frozenset({
 _PROXIMITY_CHARS = 200
 
 
+_CONFIDENCE_BY_DISTANCE = {0: 0.95, 1: 0.65, 2: 0.35}
+
+
 def detect_signals(
     paragraphs: list[str],
     player_names: list[str],
@@ -169,45 +173,48 @@ def detect_signals(
     For each player, scan every sentence in the text for keyword matches.
     Signals found in sentences that also contain the player's name get high
     confidence; signals in adjacent sentences get lower confidence.
+
+    Performance: sentences are lowered once, and keyword lists are already
+    lowercase at import time — avoids ~10 000 redundant ``.lower()`` calls
+    on a typical 50-article scrape.
     """
     if not paragraphs or not player_names:
         return []
 
     full_text = "\n".join(paragraphs)
     sentences = _split_sentences(full_text)
+    # Pre-lowercase all sentences once (not per-player)
+    sentences_lower = [s.lower() for s in sentences]
     signals: list[PerformanceSignal] = []
 
     for player in player_names:
         player_lower = player.lower()
         # Find sentence indices where the player is mentioned.
-        mention_indices: set[int] = set()
-        for i, sent in enumerate(sentences):
-            if player_lower in sent.lower():
-                mention_indices.add(i)
+        mention_indices: set[int] = {
+            i for i, sl in enumerate(sentences_lower) if player_lower in sl
+        }
         if not mention_indices:
             continue
 
-        # Scan sentences near player mentions for signals.
-        for i, sent in enumerate(sentences):
-            # Calculate proximity: 0 = same sentence, 1 = adjacent, etc.
-            min_distance = min(abs(i - mi) for mi in mention_indices)
-            if min_distance > 2:
-                continue  # too far from any mention
+        # Pre-compute the set of sentence indices within range 2 of any mention
+        nearby_indices: set[int] = set()
+        for mi in mention_indices:
+            for offset in range(-2, 3):
+                idx = mi + offset
+                if 0 <= idx < len(sentences):
+                    nearby_indices.add(idx)
 
-            sent_lower = sent.lower()
+        # Scan only nearby sentences for signals.
+        for i in nearby_indices:
+            sent_lower = sentences_lower[i]
+            min_distance = min(abs(i - mi) for mi in mention_indices)
+            confidence = _CONFIDENCE_BY_DISTANCE[min_distance]
+
             is_negated = any(neg in sent_lower for neg in _NEGATION_WORDS)
 
             for signal_type, (keywords, base_score) in _SIGNAL_DEFS.items():
                 for keyword in keywords:
-                    if keyword.lower() in sent_lower:
-                        # Calculate confidence based on proximity.
-                        if min_distance == 0:
-                            confidence = 0.95
-                        elif min_distance == 1:
-                            confidence = 0.65
-                        else:
-                            confidence = 0.35
-
+                    if keyword in sent_lower:
                         score = base_score
                         # Negation flips the sign for form/positive signals.
                         if is_negated and score > 0:
@@ -218,7 +225,7 @@ def detect_signals(
                         signals.append(PerformanceSignal(
                             signal_type=signal_type,
                             player=player,
-                            evidence=sent.strip()[:200],
+                            evidence=sentences[i].strip()[:200],
                             confidence=round(confidence, 2),
                             score=round(score, 4),
                         ))

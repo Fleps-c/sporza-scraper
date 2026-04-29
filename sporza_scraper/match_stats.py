@@ -53,6 +53,7 @@ class MatchDatabase:
     def __init__(self, csv_path: Path | None = None) -> None:
         self._matches: list[dict[str, Any]] = []
         self._teams: set[str] = set()
+        self._team_match_index: dict[str, list[int]] = {}  # team → match indices
         self._league_table_cache: list[dict[str, Any]] | None = None
         if csv_path and csv_path.exists():
             self.load(csv_path)
@@ -67,14 +68,19 @@ class MatchDatabase:
         reader = csv.DictReader(io.StringIO(text))
         self._matches = []
         self._league_table_cache = None
+        self._team_match_index = {}
         for row in reader:
             if not row.get("HomeTeam") or not row.get("AwayTeam"):
                 continue
             match = self._parse_row(row)
             if match:
+                idx = len(self._matches)
                 self._matches.append(match)
                 self._teams.add(match["home_team"])
                 self._teams.add(match["away_team"])
+                # Build index for O(1) team lookups instead of O(n) scans
+                self._team_match_index.setdefault(match["home_team"], []).append(idx)
+                self._team_match_index.setdefault(match["away_team"], []).append(idx)
         log.info("Loaded %d matches, %d teams", len(self._matches), len(self._teams))
 
     @staticmethod
@@ -419,11 +425,9 @@ class MatchDatabase:
         return parsed
 
     def _team_matches(self, team: str) -> list[dict[str, Any]]:
-        """All matches involving a team, sorted by date."""
-        return [
-            m for m in self._matches
-            if m["home_team"] == team or m["away_team"] == team
-        ]
+        """All matches involving a team, using the pre-built index."""
+        indices = self._team_match_index.get(team, [])
+        return [self._matches[i] for i in indices]
 
     @staticmethod
     def _goals_for_against(match: dict[str, Any], team: str) -> tuple[int, int]:

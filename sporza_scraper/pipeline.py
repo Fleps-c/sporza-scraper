@@ -129,8 +129,10 @@ class Pipeline:
         search queries (e.g. player names). Each article is enriched
         with player mentions and performance signals before saving.
         """
+        # Import once here, not inside the loop
         from .player_extractor import extract_player_mentions
         from .signals import classify_article_type, detect_signals
+        from .parsers import discover_news_links as _discover, parse_news_article as _parse
 
         log.info("Starting PL scrape (limit=%d)", limit)
         all_links: list[str] = []
@@ -152,8 +154,7 @@ class Pipeline:
                 log.warning("Could not fetch PL index %s", index_url)
                 continue
             log.debug("PL index %s: fetched %d bytes", index_url, len(html))
-            from .parsers import discover_news_links
-            new_links = discover_news_links(html)
+            new_links = _discover(html)
             log.info(
                 "PL index %s: discovered %d article links", index_url, len(new_links),
             )
@@ -208,8 +209,7 @@ class Pipeline:
                 log.debug("Could not fetch article %s", link)
                 continue
             try:
-                from .parsers import parse_news_article
-                article = parse_news_article(html, url=link)
+                article = _parse(html, url=link)
             except Exception as exc:
                 log.warning("Failed to parse %s: %s", link, exc)
                 continue

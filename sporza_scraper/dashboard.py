@@ -27,7 +27,13 @@ if not os.path.exists(DB_PATH):
     )
     st.stop()
 
-conn = sqlite3.connect(DB_PATH)
+@st.cache_resource
+def _get_connection():
+    """Open a single read-only connection, reused across Streamlit re-runs."""
+    return sqlite3.connect(DB_PATH, check_same_thread=False)
+
+
+conn = _get_connection()
 
 # --- SECTION 1: TEAM MOMENTUM ---
 st.header("1. Team Momentum (Nieuws Sentiment)")
@@ -124,4 +130,4 @@ if st.button("Voorspel Wedstrijd", type="primary"):
                 + "\n".join(f"- {mod}" for mod in voorspelling.sporza_modifiers)
             )
 
-conn.close()
+# Connection is managed by st.cache_resource — no manual close needed.
