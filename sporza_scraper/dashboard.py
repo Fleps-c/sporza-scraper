@@ -4,26 +4,32 @@ Launch with:  streamlit run sporza_scraper/dashboard.py
 """
 import sqlite3
 import os
+import sys
+
+# Ensure the project root is on the Python path so imports work
+# regardless of how Streamlit is launched.
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pandas as pd
 import streamlit as st
 
+from pathlib import Path
 from sporza_scraper.predictor import predict_match
 
 # 1. Page settings
 st.set_page_config(page_title="Sporza PL Dashboard", page_icon="⚽", layout="wide")
-st.title("Premier League Sentiment & Voorspellingen")
+st.title("Premier League Sentiment & Predictions")
 st.markdown(
-    "Interactief dashboard aangedreven door **Sporza.be** nieuwsdata "
-    "en een hybride Poisson-model."
+    "Interactive dashboard powered by **Sporza.be** news data "
+    "and a hybrid Poisson model."
 )
 
 # 2. Database connection
 DB_PATH = os.path.join("data", "sporza_predictions.db")
 if not os.path.exists(DB_PATH):
     st.warning(
-        f"⚠️ Database niet gevonden op `{DB_PATH}`. "
-        "Laat eerst de scraper draaien met `--pl` om data op te halen!"
+        f"⚠️ Database not found at `{DB_PATH}`. "
+        "Run the scraper first with `--pl` to fetch data!"
     )
     st.stop()
 
@@ -36,8 +42,8 @@ def _get_connection():
 conn = _get_connection()
 
 # --- SECTION 1: TEAM MOMENTUM ---
-st.header("1. Team Momentum (Nieuws Sentiment)")
-st.write("Welke clubs zijn het meest positief (of negatief) in het nieuws?")
+st.header("1. Team Momentum (News Sentiment)")
+st.write("Which clubs are most positive (or negative) in the news?")
 
 query_teams = """
     SELECT club, AVG(score) as avg_score
@@ -51,42 +57,42 @@ df_teams = pd.read_sql_query(query_teams, conn)
 if not df_teams.empty:
     st.bar_chart(df_teams.set_index("club")["avg_score"])
 else:
-    st.info("Nog geen teamdata beschikbaar. Draai de scraper om data op te halen.")
+    st.info("No team data available yet. Run the scraper to fetch data.")
 
 st.divider()
 
 # --- SECTION 2: TOP PLAYERS ---
-st.header("2. Uitgelichte Spelers (Vorm & Gevaar)")
+st.header("2. Featured Players (Form & Threat)")
 
 query_players = """
     SELECT
-        player_name AS Speler,
+        player_name AS Player,
         club        AS Club,
-        AVG(score)  AS Gemiddelde_Score,
-        COUNT(*)    AS Vermeldingen
+        AVG(score)  AS Average_Score,
+        COUNT(*)    AS Mentions
     FROM signals
     WHERE player_name IS NOT NULL
     GROUP BY player_name
-    HAVING Vermeldingen >= 1
-    ORDER BY Gemiddelde_Score DESC
+    HAVING Mentions >= 1
+    ORDER BY Average_Score DESC
     LIMIT 10
 """
 df_players = pd.read_sql_query(query_players, conn)
 
 col1, col2 = st.columns(2)
 with col1:
-    st.subheader("Top 10 Spelers")
+    st.subheader("Top 10 Players")
     st.dataframe(df_players, use_container_width=True)
 with col2:
-    st.subheader("Visuele Trend")
+    st.subheader("Visual Trend")
     if not df_players.empty:
-        st.bar_chart(df_players.set_index("Speler")["Gemiddelde_Score"])
+        st.bar_chart(df_players.set_index("Player")["Average_Score"])
 
 st.divider()
 
 # --- SECTION 3: MATCH PREDICTOR ---
-st.header("3. Hybride Match Voorspeller")
-st.write("Selecteer twee teams om de winstkansen en verwachte score te berekenen.")
+st.header("3. Hybrid Match Predictor")
+st.write("Select two teams to calculate win probabilities and expected scores.")
 
 pl_clubs = sorted([
     "Arsenal", "Aston Villa", "Brentford", "Brighton", "Chelsea",
@@ -98,36 +104,36 @@ pl_clubs = sorted([
 
 team_col1, team_col2 = st.columns(2)
 with team_col1:
-    team_home = st.selectbox("Thuisteam", pl_clubs, index=pl_clubs.index("Arsenal"))
+    team_home = st.selectbox("Home Team", pl_clubs, index=pl_clubs.index("Arsenal"))
 with team_col2:
-    team_away = st.selectbox("Uitteam", pl_clubs, index=pl_clubs.index("Manchester City"))
+    team_away = st.selectbox("Away Team", pl_clubs, index=pl_clubs.index("Manchester City"))
 
-if st.button("Voorspel Wedstrijd", type="primary"):
+if st.button("Predict Match", type="primary"):
     if team_home == team_away:
-        st.error("Kies twee verschillende teams!")
+        st.error("Please select two different teams!")
     else:
-        with st.spinner("Statistieken en sentiment combineren..."):
-            voorspelling = predict_match(team_home, team_away, data_root="data")
+        with st.spinner("Combining statistics and sentiment..."):
+            prediction = predict_match(team_home, team_away, data_root=Path("data"))
 
         st.success(
-            f"Analyse voltooid! Betrouwbaarheid model: **{voorspelling.confidence.upper()}**"
+            f"Analysis complete! Model confidence: **{prediction.confidence.upper()}**"
         )
 
         met1, met2, met3 = st.columns(3)
-        met1.metric(f"Winst {team_home}", f"{voorspelling.home_win_prob * 100:.1f}%")
-        met2.metric("Gelijkspel", f"{voorspelling.draw_prob * 100:.1f}%")
-        met3.metric(f"Winst {team_away}", f"{voorspelling.away_win_prob * 100:.1f}%")
+        met1.metric(f"Win {team_home}", f"{prediction.home_win_prob * 100:.1f}%")
+        met2.metric("Draw", f"{prediction.draw_prob * 100:.1f}%")
+        met3.metric(f"Win {team_away}", f"{prediction.away_win_prob * 100:.1f}%")
 
         st.markdown(
-            f"**Verwachte score:** {team_home} "
-            f"**{voorspelling.expected_home_goals:.1f} - "
-            f"{voorspelling.expected_away_goals:.1f}** {team_away}"
+            f"**Expected score:** {team_home} "
+            f"**{prediction.expected_home_goals:.1f} - "
+            f"{prediction.expected_away_goals:.1f}** {team_away}"
         )
 
-        if voorspelling.sporza_modifiers:
+        if prediction.sporza_modifiers:
             st.info(
-                "💡 **Impact van recent Sporza Nieuws op deze match:**\n"
-                + "\n".join(f"- {mod}" for mod in voorspelling.sporza_modifiers)
+                "💡 **Impact of recent Sporza News on this match:**\n"
+                + "\n".join(f"- {mod}" for mod in prediction.sporza_modifiers)
             )
 
 # Connection is managed by st.cache_resource — no manual close needed.

@@ -83,76 +83,6 @@
     "performance_signals": [
       {
         "confidence": 0.65,
-        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
-        "player": "Onana",
-        "score": 0.45,
-        "signal_type": "team_momentum_positive"
-      },
-      {
-        "confidence": 0.95,
-        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
-        "player": "Onana",
-        "score": 0.75,
-        "signal_type": "positive_form"
-      },
-      {
-        "confidence": 0.35,
-        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
-        "player": "Onana",
-        "score": -0.4,
-        "signal_type": "goal_threat"
-      },
-      {
-        "confidence": 0.35,
-        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
-        "player": "Konsa",
-        "score": 0.75,
-        "signal_type": "positive_form"
-      },
-      {
-        "confidence": 0.95,
-        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
-        "player": "Konsa",
-        "score": -0.4,
-        "signal_type": "goal_threat"
-      },
-      {
-        "confidence": 0.65,
-        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
-        "player": "Konsa",
-        "score": -0.6,
-        "signal_type": "injury_doubt"
-      },
-      {
-        "confidence": 0.65,
-        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
-        "player": "Tielemans",
-        "score": 0.45,
-        "signal_type": "team_momentum_positive"
-      },
-      {
-        "confidence": 0.95,
-        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
-        "player": "Tielemans",
-        "score": 0.75,
-        "signal_type": "positive_form"
-      },
-      {
-        "confidence": 0.65,
-        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
-        "player": "Tielemans",
-        "score": -0.4,
-        "signal_type": "goal_threat"
-      },
-      {
-        "confidence": 0.35,
-        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
-        "player": "Tielemans",
-        "score": -0.6,
-        "signal_type": "injury_doubt"
-      },
-      {
-        "confidence": 0.65,
         "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
         "player": "Watkins",
         "score": -0.4,
@@ -178,18 +108,93 @@
         "player": "Watkins",
         "score": 0.8,
         "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
+        "player": "Onana",
+        "score": 0.45,
+        "signal_type": "team_momentum_positive"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Onana",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Onana",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "In de Premier League is het in een strijd verwikkeld met Manchester United, Liverpool, Chelsea en zelfs Brentford voor rechtstreekse plaatsing, maar ook eindwinst van de Europa League kan Villa richti",
+        "player": "Tielemans",
+        "score": 0.45,
+        "signal_type": "team_momentum_positive"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Tielemans",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Tielemans",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
+        "player": "Tielemans",
+        "score": -0.6,
+        "signal_type": "injury_doubt"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Unai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.",
+        "player": "Konsa",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn kopbalgoal viel niets af te dingen.",
+        "player": "Konsa",
+        "score": -0.4,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Kort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker.",
+        "player": "Konsa",
+        "score": -0.6,
+        "signal_type": "injury_doubt"
       }
     ],
     "players_mentioned": [
       {
+        "context": "keurd, op zijn kopbalgoal viel niets af te dingen.\nKort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker. De Italianen hadden tot dan gedomi",
+        "mention_count": 1,
+        "name": "Watkins"
+      },
+      {
+        "context": "at moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde. Zo lijkt de opdracht voor Villa na 90 minuten al vol",
+        "mention_count": 1,
+        "name": "Watkins"
+      },
+      {
         "context": "brengen.\nUnai Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.\nHet was een hoekschop van Tielemans die V",
         "mention_count": 1,
         "name": "Onana"
-      },
-      {
-        "context": "et middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette. Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn ko",
-        "mention_count": 1,
-        "name": "Konsa"
       },
       {
         "context": "Emery stuurde dan ook zijn sterkste ploeg in de wei, mÃ©t Amadou Onana en Youri Tielemans op het middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette.",
@@ -202,21 +207,16 @@
         "name": "Tielemans"
       },
       {
-        "context": "keurd, op zijn kopbalgoal viel niets af te dingen.\nKort na de rust maakte Ollie Watkins het verdict voor Bologna nog wat pijnlijker. De Italianen hadden tot dan gedomi",
+        "context": "et middenveld.\nHet was een hoekschop van Tielemans die Villa op 0-1 zette. Ezri Konsa had eerder in de eerste helft geluk dat zijn owngoal werd afgekeurd, op zijn ko",
         "mention_count": 1,
-        "name": "Watkins"
-      },
-      {
-        "context": "at moed richting de terugmatch, al mocht die meteen weer ingeleverd worden toen Watkins ultiem nog de 1-3 scoorde. Zo lijkt de opdracht voor Villa na 90 minuten al vol",
-        "mention_count": 1,
-        "name": "Watkins"
+        "name": "Konsa"
       }
     ],
     "unique_players": [
+      "Watkins",
       "Onana",
-      "Konsa",
       "Tielemans",
-      "Watkins"
+      "Konsa"
     ]
   },
   "published_at": "2026-04-09T22:55:34+02:00",

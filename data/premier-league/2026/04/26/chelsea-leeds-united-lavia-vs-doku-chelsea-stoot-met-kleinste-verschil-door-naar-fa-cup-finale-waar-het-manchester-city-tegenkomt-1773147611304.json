@@ -1,0 +1,233 @@
+{
+  "authors": [
+    "Sporza"
+  ],
+  "body_paragraphs": [
+    "Chelsea zal het in de FA Cup-finale opnemen tegen Manchester City. The Blues wisten Leeds uit te schakelen met het kleinste verschil. Romeo Lavia stond 66 minuten tussen de lijnen.",
+    "Chelsea heeft het ontslag van coach Liam Rosenior goed verteerd. Op Wembley waren The Blues net te sterk voor Leeds. Al was het wel Leeds dat de eerste grote mogelijkheid kreeg op de openingsgoal. Aaronson besloot op Sanchez.",
+    "Chelsea reageerde, maar Joao Pedro trof het doelhout. Na 23 minuten was het wel prijs voor de Londenaars. Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1-0 tegen de touwen.",
+    "Fernandez werd onlangs nog 2 wedstrijden uit de kern gezet, omdat hij flirtte met Real Madrid .",
+    "Na de rust kwam Leeds nog dicht bij de gelijkmaker, maar Sanchez hield zijn netten schoon. Romeo Lavia startte aan de wedstrijd en werd na 66 minuten vervangen.",
+    "Chelsea zal het in de finale opnemen tegen Manchester City. Zij wonnen van Southampton na een doelpunt en een assist van Jeremy Doku.",
+    "Chelsea won de FA Cup al 8 keer, maar de laatste dateert al van 2018."
+  ],
+  "category": "FA Cup",
+  "images": [
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width1280/2026/04/26/53911a37-85b0-4c51-82e0-3369f313d5a5.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/48.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/92.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/41.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/43.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/1021.png?updated=202506"
+    },
+    {
+      "alt": "fa cup",
+      "url": "https://images.vrt.be/native_mobile_70_70_q85/sporza/soccer/competition/default/light/65.png?updated=202506"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4034.png?updated=1767697204000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4073.png?updated=1742198403000"
+    },
+    {
+      "alt": "Afbeelding",
+      "url": "https://images.vrt.be/width960/2026/04/26/53911a37-85b0-4c51-82e0-3369f313d5a5.jpg"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4222.png?updated=1740130380000"
+    },
+    {
+      "alt": null,
+      "url": "https://images.vrt.be/width960/sporza/soccer/team/default/4874.png?updated=1762254004000"
+    }
+  ],
+  "lead": "Chelsea zal het in de FA Cup-finale opnemen tegen Manchester City. The Blues wisten Leeds uit te schakelen met het kleinste verschil. Romeo Lavia stond 66 minuten tussen de lijnen.",
+  "pl_enrichment": {
+    "article_type": "general coverage",
+    "performance_signals": [
+      {
+        "confidence": 0.95,
+        "evidence": "Zij wonnen van Southampton na een doelpunt en een assist van Jeremy Doku.",
+        "player": "Doku",
+        "score": 0.8,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Zij wonnen van Southampton na een doelpunt en een assist van Jeremy Doku.",
+        "player": "Doku",
+        "score": 0.6,
+        "signal_type": "assist_threat"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Zij wonnen van Southampton na een doelpunt en een assist van Jeremy Doku.",
+        "player": "Doku",
+        "score": -0.9,
+        "signal_type": "injury_confirmed"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Chelsea reageerde, maar Joao Pedro trof het doelhout.",
+        "player": "Enzo Fernandez",
+        "score": -0.9,
+        "signal_type": "injury_confirmed"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1-0 tegen de touwen.",
+        "player": "Enzo Fernandez",
+        "score": 0.6,
+        "signal_type": "assist_threat"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Chelsea reageerde, maar Joao Pedro trof het doelhout.",
+        "player": "Neto",
+        "score": -0.9,
+        "signal_type": "injury_confirmed"
+      },
+      {
+        "confidence": 0.95,
+        "evidence": "Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1-0 tegen de touwen.",
+        "player": "Neto",
+        "score": 0.6,
+        "signal_type": "assist_threat"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Op Wembley waren The Blues net te sterk voor Leeds.",
+        "player": "Sanchez",
+        "score": 0.75,
+        "signal_type": "positive_form"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Al was het wel Leeds dat de eerste grote mogelijkheid kreeg op de openingsgoal.",
+        "player": "Sanchez",
+        "score": 0.8,
+        "signal_type": "goal_threat"
+      },
+      {
+        "confidence": 0.65,
+        "evidence": "Chelsea reageerde, maar Joao Pedro trof het doelhout.",
+        "player": "Sanchez",
+        "score": -0.9,
+        "signal_type": "injury_confirmed"
+      },
+      {
+        "confidence": 0.35,
+        "evidence": "Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1-0 tegen de touwen.",
+        "player": "Sanchez",
+        "score": 0.6,
+        "signal_type": "assist_threat"
+      }
+    ],
+    "players_mentioned": [
+      {
+        "context": "ester City. Zij wonnen van Southampton na een doelpunt en een assist van Jeremy Doku.\nChelsea won de FA Cup al 8 keer, maar de laatste dateert al van 2018.",
+        "mention_count": 1,
+        "name": "Doku"
+      },
+      {
+        "context": "rijs voor de Londenaars. Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1-0 tegen de touwen.\nFernandez werd onlangs nog 2 wedstrijde",
+        "mention_count": 1,
+        "name": "Enzo Fernandez"
+      },
+      {
+        "context": "ro trof het doelhout. Na 23 minuten was het wel prijs voor de Londenaars. Pedro Neto legde een perfecte voorzet op het hoofd van Enzo Fernandez en die buffelde de 1",
+        "mention_count": 1,
+        "name": "Neto"
+      },
+      {
+        "context": "dat de eerste grote mogelijkheid kreeg op de openingsgoal. Aaronson besloot op Sanchez.\nChelsea reageerde, maar Joao Pedro trof het doelhout. Na 23 minuten was het we",
+        "mention_count": 1,
+        "name": "Sanchez"
+      },
+      {
+        "context": "rtte met Real Madrid .\nNa de rust kwam Leeds nog dicht bij de gelijkmaker, maar Sanchez hield zijn netten schoon. Romeo Lavia startte aan de wedstrijd en werd na 66 mi",
+        "mention_count": 1,
+        "name": "Sanchez"
+      }
+    ],
+    "unique_players": [
+      "Doku",
+      "Enzo Fernandez",
+      "Neto",
+      "Sanchez"
+    ]
+  },
+  "published_at": "2026-04-26T19:59:06+02:00",
+  "related_links": [
+    "https://sporza.be/nl/sport/voetbal/~3337676/",
+    "https://sporza.be/nl/sport/voetbal/~3337656/",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1803924",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1474275",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2143708",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1550829",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1496603",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1679770",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1456100",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1495479",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1385497",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1779977",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2080799",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1530793",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1948773",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1632342",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2239449",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1551512",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1657796",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1957488",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1968855",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1236844",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2285161",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1770835",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2112142",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2039819",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2137157",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1591019",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2318680",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1672254",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2061681",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2136442",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2317175",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1467947",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2328438",
+    "https://sporza.be/nl/tag/voetbal/spelers/~875868",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1765301",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1496496",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2186491",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1534770",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2379485",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1467948",
+    "https://sporza.be/nl/tag/voetbal/spelers/~2391525",
+    "https://sporza.be/nl/tag/voetbal/spelers/~1662846"
+  ],
+  "slug": "chelsea-leeds-united-lavia-vs-doku-chelsea-stoot-met-kleinste-verschil-door-naar-fa-cup-finale-waar-het-manchester-city-tegenkomt-1773147611304",
+  "tags": [],
+  "title": "Lavia vs Doku: Chelsea stoot met kleinste verschil door naar FA Cup-finale, waar het Manchester City tegenkomt",
+  "updated_at": "2026-04-26T19:59:13+02:00",
+  "url": "https://sporza.be/nl/matches/voetbal/buitenland/eng/the-emirates-fa-cup/2025-2026/halve-finale/01/chelsea-leeds-united-lavia-vs-doku-chelsea-stoot-met-kleinste-verschil-door-naar-fa-cup-finale-waar-het-manchester-city-tegenkomt~1773147611304/"
+}
