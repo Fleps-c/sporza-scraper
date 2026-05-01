@@ -144,6 +144,18 @@ def build_parser() -> argparse.ArgumentParser:
         help="Show head-to-head record between two teams",
     )
 
+    # --- benchmark subcommand ---
+    p_bench = sub.add_parser(
+        "benchmark",
+        help="Compare our model's accuracy against betting site odds",
+    )
+    p_bench.add_argument(
+        "--report",
+        type=Path,
+        default=None,
+        help="Path to save the JSON benchmark report (optional)",
+    )
+
     # --- predict subcommand ---
     p_pred = sub.add_parser("predict", help="Generate PL predictions (players or match)")
     p_pred.add_argument(
@@ -201,6 +213,9 @@ def main(argv: list[str] | None = None) -> int:
         return 0
     if args.command == "stats":
         _run_stats(args)
+        return 0
+    if args.command == "benchmark":
+        _run_benchmark(args)
         return 0
 
     storage = Storage(root=args.out, dry_run=args.dry_run)
@@ -332,6 +347,15 @@ def _run_stats(args: argparse.Namespace) -> None:
     if args.h2h:
         h2h = db.head_to_head(args.h2h[0], args.h2h[1])
         print_head_to_head(h2h)
+
+
+def _run_benchmark(args: argparse.Namespace) -> None:
+    from .benchmark import print_benchmark, run_benchmark, save_benchmark
+
+    report = run_benchmark(data_root=args.out)
+    print_benchmark(report)
+    if args.report:
+        save_benchmark(report, args.report)
 
 
 if __name__ == "__main__":
