@@ -1,33 +1,16 @@
-version: "3.9"
-
 services:
-  # ── Scraper CLI ────────────────────────────────────────────────
-  # Run on-demand:  docker compose run --rm scraper pl-scrape --limit 50
   scraper:
     build: .
     volumes:
-      - scraper-data:/app/data
-    entrypoint: ["python", "-m", "sporza_scraper"]
-    # No 'command' — supply arguments at run time
+      - ./data:/app/data
+    # Run on-demand: docker compose run --rm scraper pl-scrape --limit 50
+    profiles: ["cli"]
 
-  # ── Streamlit Dashboard ────────────────────────────────────────
-  # Start:  docker compose up dashboard
-  # Visit:  http://localhost:8501
   dashboard:
     build: .
+    entrypoint: ["streamlit", "run", "sporza_scraper/dashboard.py", "--server.address=0.0.0.0"]
     ports:
       - "8501:8501"
     volumes:
-      - scraper-data:/app/data
-    command: ["streamlit", "run", "sporza_scraper/dashboard.py",
-              "--server.address", "0.0.0.0",
-              "--server.headless", "true"]
-    healthcheck:
-      test: ["CMD", "python", "-c",
-             "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"]
-      interval: 30s
-      timeout: 5s
-      retries: 3
-
-volumes:
-  scraper-data:
+      - ./data:/app/data
+    restart: unless-stopped

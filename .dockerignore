@@ -1,32 +1,9 @@
-# Version control
 .git
 .gitignore
-
-# Python artifacts
+.venv
 __pycache__
 *.pyc
 *.pyo
-*.egg-info
-dist
-build
-.venv
-
-# IDE / OS
 .DS_Store
-.idea
-.vscode
-*.swp
-
-# Data (mounted as volume at runtime, not baked into image)
-data/
-
-# Dev / docs
-*.md
-*.docx
 tests/
-pytest.ini
-
-# Docker meta (avoid recursive context)
-Dockerfile
-docker-compose.yml
-.dockerignore
+*.md
